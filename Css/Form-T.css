@@ -1,0 +1,371 @@
+* {
+  padding: 0 !important;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Heebo", sans-serif;
+}
+
+#preloader {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: #effdf5 url(madagascar-penguins.gif) no-repeat center center;
+  background-size: 11%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+}
+
+body {
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  color: #666565 !important;
+  background-color: #eee !important;
+  -webkit-text-sie-adjust: 100% !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+section {
+  font-family: "Poppins", sans-serif !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 100vh !important;
+  padding: 2em !important;
+}
+
+.container {
+  background-color: #fff !important;
+  border-radius: 20px !important;
+  box-shadow: 0 15px 16.83px 0.17px rgba(21, 12, 12, 0.05);
+  -webkit-box-shadow: 0 15px 16.83px 0.17px rgba(0, 0, 0, 0.05);
+  display: flex !important;
+}
+
+h1 {
+  padding: 16px !important;
+  margin: 4rem 1rem 0 !important;
+}
+
+h2 {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  color: #222 !important;
+  margin: 0 0 30px !important;
+}
+
+h4,
+h3 {
+  padding: 10px !important;
+  margin: 1.1em !important;
+  font-size: 1.3em !important;
+}
+
+h3 i {
+  margin-right: 1em;
+  color: #19c099;
+}
+
+.column1,
+.column2 {
+  width: 50% !important;
+}
+
+.column2 {
+  background-size: cover;
+  background-position: 50%;
+  background-image: linear-gradient(
+      rgba(9, 138, 110, 0.307),
+      rgba(19, 141, 150, 0.496)
+    ),
+    url(../img/about.jpg);
+  max-width: 100% !important;
+  opacity: 0.9 !important;
+  border-top-left-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+}
+
+.icon {
+  margin: 0 3.5em;
+  gap: 40px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px !important;
+  height: 35px;
+  width: 35px;
+  color: #00b98e;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+  transition: 0.15s ease-in-out;
+  box-shadow: 0 0 10px 0px #0000004f;
+}
+
+.icon a:hover {
+  background-color: #00b98e;
+  color: #ffffff;
+}
+
+.icon a i {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.form {
+  padding: 30px 50px !important;
+}
+
+.form-control {
+  margin-bottom: 10px !important;
+  padding-bottom: 25px !important;
+  position: relative !important;
+}
+
+.form-control label {
+  color: #333 !important;
+  display: block !important;
+  margin-bottom: 5px !important;
+}
+
+.form-control input {
+  font-family: "Poppins" sans-serif !important;
+  border: 1px solid #e6e6e6 !important;
+  border-radius: 4px !important;
+  display: block !important;
+  width: 100% !important;
+  padding: 10px !important;
+  font-size: 14px !important;
+}
+
+.form-control:after {
+  content: "\2713" !important;
+  font-size: 1.5rem !important;
+  opacity: 0 !important;
+  color: var(--checkmark-color) !important;
+  position: absolute !important;
+  top: 50% !important;
+  right: 10px !important;
+  transform: translateY(-30%) !important;
+  transition: all ease 0.4s !important;
+}
+
+.form-control input:focus {
+  outline: none !important;
+  border-color: #777 !important;
+}
+
+.form-control.success input {
+  border-color: var(--success-color) !important;
+}
+
+.form-control.error input {
+  border-color: var(--error-color) !important;
+}
+
+.form-control.success:after {
+  opacity: 1 !important;
+  transform: translateY(-50%) !important;
+}
+
+.form-control small {
+  color: var(--error-color) !important;
+  position: absolute !important;
+  bottom: 1 !important;
+  left: 1 !important;
+  visibility: hidden !important;
+  color: red !important;
+}
+
+.form-control.error small {
+  visibility: visible !important;
+}
+
+button {
+  cursor: pointer !important;
+  background: #6dabe4 !important;
+  border: none !important;
+  border-radius: 5px !important;
+  color: #fff !important;
+  display: inline-block !important;
+  font-size: 16px !important;
+  padding: 15px 39px !important;
+  margin-top: 20px !important;
+  transition: all ease 0.25s !important;
+  width: 100% !important;
+  margin: 1rem 0 !important;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #0f66b8 !important;
+}
+
+button:active {
+  outline: 5px solid #0f66b84f;
+}
+::selection {
+  background-color: #4292dc;
+  color: #fff;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    padding: 80px !important;
+  }
+
+  .container {
+    flex-direction: column !important;
+  }
+
+  .column1,
+  .column2 {
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 700) {
+  .form-t {
+    padding: 0 !important;
+  }
+
+  .form-control {
+    margin-bottom: 35.4px !important;
+    padding-bottom: 10px !important;
+  }
+
+  h1 {
+    font-size: 4rem !important;
+    line-height: 1 !important;
+  }
+
+  body {
+    padding: 10px !important;
+  }
+
+  h2 {
+    font-size: 25px !important;
+  }
+
+  h1 {
+    font-size: 4em !important;
+  }
+
+  .form-control input {
+    font-size: 12px !important;
+    padding: 5px !important;
+  }
+
+  button {
+    padding: 10px 25px !important;
+    font-size: 14px !important;
+  }
+
+  .form {
+    padding: 30px 20px !important;
+  }
+
+  .icon {
+    margin: 0 3.5em;
+    gap: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.form-control {
+  margin-bottom: 5px !important;
+  padding-bottom: 15px !important;
+}
+
+body {
+  padding: 10px !important;
+}
+
+h2 {
+  font-size: 25px !important;
+}
+
+h1 {
+  font-size: 4em !important;
+}
+
+.form-control input {
+  font-size: 12px !important;
+  padding: 5px !important;
+}
+
+button {
+  padding: 10px 25px !important;
+  font-size: 14px !important;
+}
+
+.form {
+  padding: 30px 20px !important;
+}
+
+.icon {
+  margin: 0 3.5em;
+  gap: 20px;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-control {
+  margin-bottom: 5px !important;
+  padding-bottom: 15px !important;
+}
+
+::selection {
+  background-color: #00b894;
+  color: whitesmoke;
+}
+
+@media (max-width: 999px) {
+  #preloader {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #effdf5 url(madagascar-penguins.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  #preloader {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: #effdf5 url(madagascar-penguins.gif) no-repeat center center;
+    background-size: 45%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+  }
+}
