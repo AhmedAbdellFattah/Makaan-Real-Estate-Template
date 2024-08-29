@@ -312,6 +312,7 @@ a:hover {
   border: 1px dashed #00b98e;
   margin-right: 5px;
   transform: translateY(30px);
+  margin-top: 8px;
 }
 
 .logo-img {
